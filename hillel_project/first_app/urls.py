@@ -1,6 +1,6 @@
 from django.urls import path
 
-from first_app.views import func_views, generic_views
+from .views import func_views, generic_views, homework
 
 urlpatterns = [
     # path('employees/', func_views.employee_list, name='employee_list'),
@@ -9,5 +9,6 @@ urlpatterns = [
     path('employees/update/<int:pk>/', generic_views.EmployeeUpdateView.as_view(), name='employee_update'),
     path('employees/delete/<int:pk>/', func_views.employee_delete, name='employee_delete'),
     path('querysets/', func_views.queryset_route, name='querysets'),
+    path('querysetshw/', homework.homework_querysets, name='homework_querysets')
 
 ]
