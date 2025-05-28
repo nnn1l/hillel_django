@@ -22,3 +22,17 @@ class RequestStatisticMiddleware(MiddlewareMixin):
             stats, is_created = RequestStatistics.objects.get_or_create(user=request.user)
             stats.requests += 1
             stats.save()
+
+    def process_exception(self, request, exception):
+        """
+        Інкрементує поле 'exceptions' в моделі RequestStatistics
+        кожного разу, коли відбувається виключення.
+        """
+        if request.user.is_authenticated and not request.path.startswith("/admin"):
+            try:
+                stats, created = RequestStatistics.objects.get_or_create(user=request.user)
+                stats.exceptions += 1
+                stats.save()
+            except Exception as e:
+                logger.error(f"Помилка при оновленні статистики виключень: {e}")
+        return None  
