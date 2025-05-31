@@ -73,4 +73,3 @@ class SalaryForm(forms.Form):
 
         return cleaned_data
 
-    #push
