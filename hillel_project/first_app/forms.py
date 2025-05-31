@@ -72,3 +72,5 @@ class SalaryForm(forms.Form):
             self.add_error(None, forms.ValidationError("Кількість днів відпочинку не може перевищувати 3.")) # Використовуємо self.add_error для додавання загальної помилки форми
 
         return cleaned_data
+
+    #push
