@@ -16,7 +16,7 @@ class EmployeeForm(forms.ModelForm):
 
 
 class SalaryForm(forms.Form):
-    employee = forms.ModelChoiceField(queryset=Employee.objects.all(), required=True) # Додаємо required=True
+    employee = forms.ModelChoiceField(queryset=Employee.objects.all(), required=True)
 
 
     def __init__(self, *args, **kwargs):
@@ -66,10 +66,10 @@ class SalaryForm(forms.Form):
                     holiday_days_count += 1
 
         if sick_days_count > 5:
-            self.add_error(None, forms.ValidationError("Кількість лікарняних днів не може перевищувати 5.")) # Використовуємо self.add_error для додавання загальної помилки форми
+            self.add_error(None, forms.ValidationError("Кількість лікарняних днів не може перевищувати 5."))
 
         if holiday_days_count > 3:
-            self.add_error(None, forms.ValidationError("Кількість днів відпочинку не може перевищувати 3.")) # Використовуємо self.add_error для додавання загальної помилки форми
+            self.add_error(None, forms.ValidationError("Кількість днів відпочинку не може перевищувати 3."))
 
         return cleaned_data
 
