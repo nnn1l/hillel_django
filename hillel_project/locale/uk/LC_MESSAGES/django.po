@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-31 21:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: hillel_project/first_app/models/department.py:5
+msgid "Department Name"
+msgstr "Назва відділу"
+
+#: hillel_project/first_app/models/department.py:11
+msgid "Parent Department"
+msgstr "Батьківський відділ"
+
+#: hillel_project/first_app/models/position.py:5
+msgid "Title"
+msgstr "Заголовок"
+
+#: hillel_project/first_app/models/position.py:6
+msgid "Is Manager"
+msgstr "Менеджер"
+
+#: hillel_project/first_app/models/position.py:7
+msgid "Is Active"
+msgstr "Активний"
+
+#: hillel_project/first_app/models/position.py:11
+msgid "Department"
+msgstr "Відділ"
+
+#: hillel_project/first_app/models/position.py:13
+msgid "Job Description"
+msgstr "Опис роботи"
+
+#: hillel_project/first_app/models/position.py:14
+msgid "Monthly Rate"
+msgstr "Зарплата"
+
+#: hillel_project/templates/base.html:31
+msgid "Change Language"
+msgstr "Змінити мову"
+
+#: hillel_project/templates/employee_confirm_delete.html:6
+msgid "Confirm Delete"
+msgstr "Підтвердити видалення"
+
+#: hillel_project/templates/employee_confirm_delete.html:7
+msgid "Are you sure you want to delete"
+msgstr "Ви впевнені, що хочете видалити?"
+
+#: hillel_project/templates/employee_confirm_delete.html:10
+#: hillel_project/templates/employee_list.html:40
+msgid "Delete"
+msgstr "Видалити"
+
+#: hillel_project/templates/employee_confirm_delete.html:11
+msgid "Cancel"
+msgstr "Відмінити"
+
+#: hillel_project/templates/employee_form.html:10
+msgid "Username"
+msgstr "Нікнейм"
+
+#: hillel_project/templates/employee_form.html:20
+#: hillel_project/templates/employee_list.html:23
+msgid "First Name"
+msgstr "Ім’я"
+
+#: hillel_project/templates/employee_form.html:30
+#: hillel_project/templates/employee_list.html:24
+msgid "Last Name"
+msgstr "Призвіще"
+
+#: hillel_project/templates/employee_form.html:40
+#: hillel_project/templates/employee_list.html:25
+msgid "Email"
+msgstr "Електррнна пошта"
+
+#: hillel_project/templates/employee_form.html:50
+#: hillel_project/templates/employee_list.html:26
+msgid "Position"
+msgstr "Позиція"
+
+#: hillel_project/templates/employee_form.html:66
+msgid "Save"
+msgstr "Зберегти"
+
+#: hillel_project/templates/employee_list.html:4
+msgid "Employee List"
+msgstr "Лист працівників"
+
+#: hillel_project/templates/employee_list.html:10
+msgid "Search"
+msgstr "Пошук"
+
+#: hillel_project/templates/employee_list.html:12
+msgid "Filter"
+msgstr "Фільтр"
+
+#: hillel_project/templates/employee_list.html:17
+msgid "Salary Calculator"
+msgstr "Калькулятор зарплати"
+
+#: hillel_project/templates/employee_list.html:27
+msgid "Actions"
+msgstr "Дії"
+
+#: hillel_project/templates/employee_list.html:39
+msgid "Update"
+msgstr "Оновити"

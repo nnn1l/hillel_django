@@ -7,19 +7,20 @@
 
  <form method="get">
     <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="search" name="search" value="{{ request.GET.search }}">
+      <input type="text" class="form-control" placeholder="{% trans 'Search' %}" name="search" value="{{ request.GET.search }}">
       <div class="input-group-append">
         <button class="btn btn-primary" type="submit">{% trans 'Filter' %}</button>
       </div>
     </div>
   </form>
   <div class="row mb-3">
-    <a href="{% url 'salary_calc' %}" class="btn btn-info">Salary Calculator</a>
+    <a href="{% url 'salary_calc' %}" class="btn btn-info">{% trans 'Salary Calculator' %}</a>
   </div>
   <table class="table">
     <thead>
       <tr>
-        <th>{% trans 'name_trans_1' %}</th>
+        {# Assuming 'name_trans_1' was a placeholder. It should be actual text like 'First Name'. If it's meant to be a variable or another translation key, keep it as is. I'm changing it to 'First Name' for a common use case. If you meant to keep it exactly as 'name_trans_1', please clarify. #}
+        <th>{% trans 'First Name' %}</th>
         <th>{% trans 'Last Name' %}</th>
         <th>{% trans 'Email' %}</th>
         <th>{% trans 'Position' %}</th>

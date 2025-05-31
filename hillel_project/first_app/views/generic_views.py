@@ -4,14 +4,14 @@ import datetime
 from django.db.models import Q
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import ListView, UpdateView, DeleteView, CreateView, FormView
+from django.views.generic import ListView, UpdateView, DeleteView, CreateView, FormView, DetailView
 
-from first_app.models import Employee
-from first_app.forms import EmployeeForm
-from first_app.mixins import UserIsAdminMixin
-from first_app.forms import SalaryForm
+from ..models import Employee
+from ..forms import EmployeeForm
+from ..mixins import UserIsAdminMixin
+from ..forms import SalaryForm
 
-from first_app.salary_calculator import CalculateMonthRateSalary
+from ..salary_calculator import CalculateMonthRateSalary
 
 logger = logging.getLogger('default')
 
@@ -81,4 +81,4 @@ class SalaryCalculatorView(UserIsAdminMixin, FormView):
             context={'form': form, 'calculated_salary': salary}
         )
 
-
+#class ...

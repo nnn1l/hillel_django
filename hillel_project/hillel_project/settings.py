@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
+import os.path
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -112,7 +113,7 @@ LANGUAGES = [
 ]
 
 LOCALE_PATHS = (
-    BASE_DIR / "locale",
+    os.path.join(BASE_DIR / "locale"),
 )
 
 LANGUAGE_CODE = 'en'
