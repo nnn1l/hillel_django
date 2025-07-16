@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% load cache %}
+{% cache 120 form_fields %}
+    {% for field in form %}
+        {{ field }}
+    {% endfor %}
+{% endcache %}
+
 {% block content %}
   <h1>Salary calculator</h1>
 

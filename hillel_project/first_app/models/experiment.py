@@ -24,6 +24,7 @@ class Experiment2(MyBaseModel):
     class Meta:
         # Experiment2.objects.latest()
         get_latest_by = "created_at"
+        managed = False
 
 
 class PublishedQuerySet(models.QuerySet):

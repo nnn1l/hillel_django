@@ -5,6 +5,7 @@
 {% block title %}{% trans 'Home' %}{% endblock title %}
 
 {% block content %}
+<img src="{% if company_logo %}{{ company_logo }}{% else %}{% static 'img/default_logo.png' %}{% endif %}" alt="Company Logo">
 <div class="header">
     <img src="{% static 'img/logo.png' %}" alt="Logo">
     <h1>Welcome to HR System</h1>

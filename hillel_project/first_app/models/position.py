@@ -1,6 +1,11 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
+
+def cached_property(args):
+    pass
+
+
 class Position(models.Model):
     title = models.CharField(verbose_name=_("Title"), max_length=200)
     is_manager = models.BooleanField(default=False)
@@ -12,3 +17,7 @@ class Position(models.Model):
 
     def __str__(self):
         return f"{self.title} ({self.department})"
+
+    @cached_property
+    def total_positions(self):
+        return Position.objects.count()
